@@ -1,0 +1,93 @@
+::selection {
+  background: #808080;
+  color: #E6E6E6;
+}
+
+body {
+  font-family: 'PT Serif', serif;
+  background-color: #f9f7f1;
+  color: #404040;
+  padding: 20px;
+}
+
+blockquote {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.2em;
+  font-size: 1.8em;
+  column-span: 2;
+  -webkit-column-span: 2;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 5px;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 4em;
+  line-height: 1em;
+  text-align: center;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 32px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h2 {
+  font-size: 3em;
+  line-height: 1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 2.4em;
+  margin: 0px;
+  padding: 0px;
+  line-height: 0.8em;
+  padding-top: 20px;
+}
+
+.time {
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  border-top: 3px solid #333;
+  border-bottom: 3px solid #333;
+  font-size: 1.6em;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media only all and (min-width: 600px) {
+  article {
+    columns: 3;
+    column-gap: 40px;
+    line-height: 1.5em;
+    font-size: 1em;
+    column-rule: 2px outset #444;
+  }
+  h1 {
+    font-size: 8em;
+    column-span: all;
+  }
+  .time {
+    column-span: all;
+  }
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    hyphenate-character: "\u2605";
+  }
+}
